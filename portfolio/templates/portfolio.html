@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Port Folio</title>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/static/assest/css/vendor.css">
+    <link rel="stylesheet" href="/static/assest/css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/static/assest/js/site.webmanifest">
+        <link rel="icon" type="image/x-icon" href="/static/assest/images/logo.png">
+
+</head>
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap ss-home">
+
+
+        <!-- # site header
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="row s-header__inner width-sixteen-col">
+
+                  <div class="s-header__block">
+                    <div class="s-header__logo">
+                        <a class="logo" href="{% url 'index' %}">
+                            <img src="/static/assest/images/logo.png" alt="Homepage">
+                        </a>
+                    </div>
+
+                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+                </div> <!-- end s-header__block -->
+
+
+                <nav class="s-header__nav">
+
+                    <ul class="s-header__menu-links">
+                        <li><a href="{% url 'index' %}">Home</a></li>
+                        <li><a href="{% url 'service' %}">Services</a></li>
+                        <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+                        <li><a href="{%url 'contact' %}">Contact</a></li>
+                    </ul> <!-- s-header__menu-links -->
+
+                    <div class="s-header__contact">
+                          <a href="{% url 'cv' %}"  class="btn btn--primary" download="CV.pdf">Download CV</a>
+                    </div> <!-- s-header__contact -->
+
+                </nav> <!-- end s-header__nav -->
+
+            </div> <!-- end s-header__inner -->
+
+        </header> <!-- end s-header -->
+    <section id="content" class="s-content">
+
+               <section class="s-pageheader pageheader">
+                    <div class="row">
+                        <div class="column xl-12">
+                            <h4 class="page-title">
+                                <span class="page-title__small-type text-pretitle">Portfolio</span>
+                                Completed Projects
+                            </h4>
+
+                        </div>
+                    </div>
+               </section> <!-- pageheader -->
+
+
+               <section class="s-testimonials">
+                    <div class="row s-testimonials__content">
+                        <div class="column xl-12 testimonials">
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        </div>
+
+        <div align="center">
+            <button class="btn btn-default filter-button btn--primary s-header__contact-btn" data-filter="all">All</button>
+            <button class="btn btn-default filter-button btn--primary s-header__contact-btn" data-filter="ecom">E-Commerce</button>
+            <button class="btn btn-default filter-button btn--primary s-header__contact-btn" data-filter="inven">Inventory Management</button>
+            <button class="btn btn-default filter-button btn--primary s-header__contact-btn" data-filter="vote">Voting System</button>
+            <button class="btn btn-default filter-button btn--primary s-header__contact-btn" data-filter="blog">Blogging App</button>
+            <button class="btn btn-default filter-button btn--primary s-header__contact-btn" data-filter="doc">Doctor Appointment</button>
+
+        </div>
+        <br/>
+
+
+<div class="row">
+     <div class="gallery_product col-lg-4 filter ecom">
+                <img src="/static/assest/images/Screenshot (21).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+
+            <div class="gallery_product col-lg-4 filter ecom">
+                <img src="/static/assest/images/Screenshot (11).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+
+            <div class="gallery_product col-lg-4  filter ecom">
+                <img src="/static/assest/images/Screenshot (12).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+</div>
+                            <div class="row">
+     <div class="gallery_product col-lg-4  filter ecom">
+                <img src="/static/assest/images/Screenshot (13).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+
+            <div class="gallery_product col-lg-4 filter ecom">
+                <img src="/static/assest/images/Screenshot (14).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+
+            <div class="gallery_product col-lg-4 filter ecom">
+                <img src="/static/assest/images/Screenshot (16).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+</div>
+                              <div class="row">
+     <div class="gallery_product col-lg-4  filter ecom">
+                <img src="/static/assest/images/Screenshot (17).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+
+            <div class="gallery_product col-lg-4 filter ecom">
+                <img src="/static/assest/images/Screenshot (18).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+
+            <div class="gallery_product col-lg-4 filter ecom">
+                <img src="/static/assest/images/Screenshot (19).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+</div>
+<div class="row">
+     <div class="gallery_product col-lg-4  filter inven">
+                <img src="/static/assest/images/Screenshot (25).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+
+            <div class="gallery_product col-lg-4  filter inven">
+                <img src="/static/assest/images/Screenshot (28).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+
+            <div class="gallery_product col-lg-4  filter inven">
+                <img src="/static/assest/images/Screenshot (29).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+</div>
+
+<div class="row">
+     <div class="gallery_product col-lg-4  filter inven">
+                <img src="/static/assest/images/Screenshot (30).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+
+            <div class="gallery_product col-lg-4 filter inven">
+                <img src="/static/assest/images/Screenshot (31).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+
+            <div class="gallery_product col-lg-4 filter inven">
+                <img src="/static/assest/images/Screenshot (32).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+</div>
+                            <div class="row">
+     <div class="gallery_product col-lg-4 filter inven">
+                <img src="/static/assest/images/Screenshot (33).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+
+            <div class="gallery_product col-lg-4 filter inven">
+                <img src="/static/assest/images/Screenshot (34).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+
+            <div class="gallery_product col-lg-4 filter inven">
+                <img src="/static/assest/images/Screenshot (35).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+</div>
+   <div class="row">
+     <div class="gallery_product col-lg-4  filter vote">
+                <img src="/static/assest/images/Screenshot (37).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+
+            <div class="gallery_product col-lg-4  filter vote">
+                <img src="/static/assest/images/Screenshot (38).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+
+            <div class="gallery_product col-lg-4 filter vote">
+                <img src="/static/assest/images/Screenshot (39).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+</div>
+   <div class="row">
+     <div class="gallery_product col-lg-4 filter vote">
+                <img src="/static/assest/images/Screenshot (40).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+
+            <div class="gallery_product col-lg-4 filter vote">
+                <img src="/static/assest/images/Screenshot (41).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+
+            <div class="gallery_product col-lg-4 filter vote">
+                <img src="/static/assest/images/Screenshot (42).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+</div>
+ <div class="row">
+     <div class="gallery_product col-lg-4 filter blog">
+                <img src="/static/assest/images/Screenshot (43).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+
+            <div class="gallery_product col-lg-4 6 filter blog">
+                <img src="/static/assest/images/Screenshot (44).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+
+            <div class="gallery_product col-lg-4  filter blog">
+                <img src="/static/assest/images/Screenshot (45).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+</div>
+                             <div class="row">
+     <div class="gallery_product col-lg-4  filter blog">
+                <img src="/static/assest/images/Screenshot (46).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+
+            <div class="gallery_product col-lg-4  filter blog">
+                <img src="/static/assest/images/Screenshot (48).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+
+            <div class="gallery_product col-lg-4  filter blog">
+                <img src="/static/assest/images/Screenshot (131).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+</div>
+                              <div class="row">
+     <div class="gallery_product col-lg-4  filter doc">
+                <img src="/static/assest/images/Screenshot (133).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+
+            <div class="gallery_product col-lg-4  filter doc">
+                <img src="/static/assest/images/Screenshot (134).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+
+            <div class="gallery_product col-lg-4  filter doc">
+                <img src="/static/assest/images/Screenshot (135).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+</div>
+
+                              <div class="row">
+     <div class="gallery_product col-lg-4  filter doc">
+                <img src="/static/assest/images/Screenshot (136).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+
+            <div class="gallery_product col-lg-4  filter doc">
+                <img src="/static/assest/images/Screenshot (137).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+
+            <div class="gallery_product col-lg-4  filter doc">
+                <img src="/static/assest/images/Screenshot (138).png" class="img-responsive img-thumbnail img-fluid zoom-effect">
+            </div>
+</div>
+
+
+
+
+                        </div></div></section>
+    </section>
+    </div>
+
+     <footer class="s-footer">
+            <div class="row s-footer__bottom">
+                <div class="column xl-12 lg-12">
+                    <p class="ss-copyright">
+                        <span>© Copyright Summaiya 2024</span>
+                        <span>Design by <a href="https://www.styleshout.com/">StyleShout</a> Distribution By <a href="https://themewagon.com">ThemeWagon</a></span>
+                    </p>
+                </div>
+
+                <div class="ss-go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">&lt;!--!  Atomicons Free 1.00 by @atisalab License - https://atomicons.com/license/ (Icons: CC BY 4.0) Copyright 2021 Atomicons --&gt;<polyline points="17 11 12 6 7 11"></polyline><line x1="12" y1="18" x2="12" y2="6"></line></svg>
+                    </a>
+                </div> <!-- end ss-go-top -->
+            </div>
+
+        </footer> <!-- end s-footer -->
+
+<script>
+$(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+
+        }
+    });
+
+    if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
+});
+</script>
+<style>
+  .gallery-title
+{
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #42B32F;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #42B32F;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: #42B32F;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+.zoom-effect {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .zoom-effect:hover {
+      transform: scale(1.2); /* Adjust the scale factor for the zoom effect */
+    }
+</style>
+</body>
+   <script src="/static/assest/js/plugins.js"></script>
+    <script src="/static/assest/js/main.js"></script>
+    <script src="/static/tab/ven/js/main.js"></script>
+</html>
